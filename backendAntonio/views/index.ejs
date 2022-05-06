@@ -14,10 +14,11 @@
         <h3 class="autores">Powered by CuVi</h3>
 
         <!-- login section-->
-        <form method="post"  class="formulario"  action="/login">
+        <!-- <form method="post"  class="formulario"  action="/login"> -->
+        <form action="/login" class="formulario" method="POST">
             <h2 class="login">Login</h2>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
+            <input type="text" placeholder="Username" name="username"> 
+            <input type="password" placeholder="Password" name="password">
             <input type="submit" value="Submit">            
             <!-- forgot password link-->
             <a href="/forgotPass" class="forgot" role="button">Forgot your Password?</a>    
@@ -29,7 +30,7 @@
         </form>
 
             <div class="language-picker js-language-picker">
-             <form method="post" action="/language" class="language-picker__form">
+             <form method="POST" action="/language" class="language-picker__form">
                <label for="language-picker-select">Select your language</label>
           
                <select name="language-picker-select" id="language-picker-select">

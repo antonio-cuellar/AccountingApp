@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));/// Url encoded to retrive html
 app.use(express.static("public")); /// Server dir
 
 /// Mongoose connection configuration
-const url = "mongodb://localhost:27017/userDB"; /// LocalHost Route to userDB
+const url = "mongodb://localhost:27017/userDbAccountin"; /// LocalHost Route to userDB
 mongoose.connect(url, {useNewUrlParser: true});
 
 /// Conection container 
@@ -35,7 +35,7 @@ app.use(passport.session()); /// passport handle sessions
 /// Initial schema for the databe
 
 const userSchema = new mongoose.Schema({
-    userName: String,
+    username: String,
     password: String
 });
 
@@ -53,6 +53,33 @@ passport.deserializeUser(User.deserializeUser());
 app.get("/",(req,res)=>{
     res.render("index");
 });
+
+app.get("/register",(req,res)=>{
+    console.log("register working");
+    res.send("WORKING");
+});
+
+app.post("/register",(req,res)=>{
+    // Create the new users.
+    User.register({username: req.body.username},req.body.password,(e,user)=>{
+        if(e){
+            console.log(e);
+            res.redirect("/reister"); ///In case of error return to the register page
+        }else{
+            passport.authenticate("local")(req,res,()=>{ /// Authenticate and begin a session
+                res.send("SUCESSFULLY LOGIN"); ///
+            });
+        }
+
+    });
+});
+
+app.post("/login",(req,res)=>{
+    passport.authenticate("local")(req,res,function() { /// Authenticate and begin a session
+        res.send("SUCESSFULLY LOGIN");
+      });
+});
+
 
 
 const port = process.env.PORT;
