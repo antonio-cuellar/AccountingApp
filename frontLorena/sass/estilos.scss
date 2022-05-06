@@ -28,11 +28,26 @@ body{
         width: 300px;
     
     .login{
+        
         text-align: left;
         margin: 10px 10px;
         padding: 10px 10px;
     }
+    .icono{
+        background-image: url('C:\Users\Usuario\OneDrive - Universidad de Pamplona\Documents\desarrollo web\retoProyectoOne\contability\AccountingApp\frontLorena\programador.png');
+        background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding-left: 28px;
+  height: 30px;
+  border: 1px solid rgba(9, 113, 163, 1);
+  border-radius: 3px;
+    }
     input[type=text]{
+              
         width: 80%;
        padding: 10px;
        margin-bottom: 5px;

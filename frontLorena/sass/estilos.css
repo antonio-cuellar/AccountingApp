@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -31,6 +32,19 @@ body .formulario .login {
   text-align: left;
   margin: 10px 10px;
   padding: 10px 10px;
+}
+body .formulario .icono {
+  background-image: url("C:UsersUsuarioOneDrive - Universidad de Pamplona\documentsÞsarrollo webretoProyectoOne\contabilityૌountingApp\frontLorenaprogramador.png");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding-left: 28px;
+  height: 30px;
+  border: 1px solid rgb(9, 113, 163);
+  border-radius: 3px;
 }
 body .formulario input[type=text] {
   width: 80%;
@@ -80,10 +94,15 @@ body .formulario .loginGoogle {
   margin-bottom: 10px;
 }
 body .language-picker__form {
-  background: gray;
+  background: #ccc;
   width: 300px;
   margin: auto;
   margin-top: 20px;
+}
+body .copyright {
+  margin-top: 20px;
+  padding: 5px;
+  background: rgb(75, 74, 74);
 }
 
 /*# sourceMappingURL=estilos.css.map */
