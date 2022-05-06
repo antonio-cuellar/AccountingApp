@@ -13,18 +13,21 @@
         <h2 class="descripcion">Professional Personal Acconunting App</h2>
         <h3 class="autores">Powered by CuVi</h3>
 
-
+        <!-- login section-->
         <form method="post"  class="formulario"  action="/login">
             <h2 class="login">Login</h2>
             <input type="text" placeholder="Username">
             <input type="password" placeholder="Password">
-            <input type="submit" value="Submit">
-            <a href="#" class="forgot">Forgot your Password?</a>
+            <input type="submit" value="Submit">            
+            <!-- forgot password link-->
+            <a href="/forgotPass" class="forgot" role="button">Forgot your Password?</a>    
             <h4 class="dontHave">Dond't Have an accounting?</h4>
-            <a href="#" class="createCount">Create an Account</a>
-           <h2 class="or"> OR</h2>
+            <!-- Register link -->
+            <a href="/createAccount" class="createCount" role="button">Create an Account</a>
+            <h2 class="or"> OR</h2>
             <button class="loginGoogle"> Login with Google</button>
-     </form>
+        </form>
+
             <div class="language-picker js-language-picker">
              <form method="post" action="/language" class="language-picker__form">
                <label for="language-picker-select">Select your language</label>
