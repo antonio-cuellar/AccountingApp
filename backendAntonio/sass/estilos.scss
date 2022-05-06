@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+
+ .contenedor{
+    text-align: center;
+    margin: auto;
+    .descripcion{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+     }
+    .autores{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: italic;
+    }
+  }
+.formulario{
+    
+        background: #CCDDB7;
+        margin: auto;
+        width: 300px;
+    
+    .login{
+        
+        text-align: left;
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+    .icono{
+        background-image: url('C:\Users\Usuario\OneDrive - Universidad de Pamplona\Documents\desarrollo web\retoProyectoOne\contability\AccountingApp\frontLorena\programador.png');
+        background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding-left: 28px;
+  height: 30px;
+  border: 1px solid rgba(9, 113, 163, 1);
+  border-radius: 3px;
+    }
+    input[type=text]{
+              
+        width: 80%;
+       padding: 10px;
+       margin-bottom: 5px;
+    }
+    input[type=password]{
+        width: 80%;
+       padding: 10px;
+       display: block;
+       margin: 0 30px;
+       margin-bottom: 5px;
+    }
+    input[type=submit]{
+        border-color: gray;
+        width: 48%;
+        background: gray;
+        color: #fff;
+        padding-bottom: 5px;
+        text-align: center;
+        padding-top: 5px;
+        margin-left: 0;      
+    }
+    .forgot{
+        font-size: 10px;
+        width: 40%;
+    }
+    .dontHave{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 10px;
+        display: inline-block;
+
+    }
+    .createCount{
+        font-size: 12px;
+        text-align: right;
+    }
+    .loginGoogle{
+        width: 70%;
+        background: #4285F4;
+        color: #fff;
+        font-size: 16px;
+        border-color: #4285F4;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+     
+
+
+}
+@import 'language';
+}

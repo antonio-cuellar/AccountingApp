@@ -1,0 +1,108 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+body .contenedor {
+  text-align: center;
+  margin: auto;
+}
+body .contenedor .descripcion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+body .contenedor .autores {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+body .formulario {
+  background: #CCDDB7;
+  margin: auto;
+  width: 300px;
+}
+body .formulario .login {
+  text-align: left;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+body .formulario .icono {
+  background-image: url("C:UsersUsuarioOneDrive - Universidad de Pamplona\documentsÞsarrollo webretoProyectoOne\contabilityૌountingApp\frontLorenaprogramador.png");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding-left: 28px;
+  height: 30px;
+  border: 1px solid rgb(9, 113, 163);
+  border-radius: 3px;
+}
+body .formulario input[type=text] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+body .formulario input[type=password] {
+  width: 80%;
+  padding: 10px;
+  display: block;
+  margin: 0 30px;
+  margin-bottom: 5px;
+}
+body .formulario input[type=submit] {
+  border-color: gray;
+  width: 48%;
+  background: gray;
+  color: #fff;
+  padding-bottom: 5px;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 0;
+}
+body .formulario .forgot {
+  font-size: 10px;
+  width: 40%;
+}
+body .formulario .dontHave {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+  display: inline-block;
+}
+body .formulario .createCount {
+  font-size: 12px;
+  text-align: right;
+}
+body .formulario .loginGoogle {
+  width: 70%;
+  background: #4285F4;
+  color: #fff;
+  font-size: 16px;
+  border-color: #4285F4;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+body .language-picker__form {
+  background: #ccc;
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+body .copyright {
+  margin-top: 20px;
+  padding: 5px;
+  background: rgb(75, 74, 74);
+}
+
+/*# sourceMappingURL=estilos.css.map */
